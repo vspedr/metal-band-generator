@@ -1,6 +1,6 @@
 {
   "name": "metal-band-generator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Randomly generates ficional metal band names and members",
   "main": "lib/index.js",
   "repository": "https://github.com/vspedr/metal-band-generator",
