@@ -1,7 +1,21 @@
-import sum from '../src/index';
+import getBand, {getBandName, getGenre} from '../src/index';
 
-describe('example test', () => {
-  it('should sum two numbers', () => {
-    expect(sum(2, 3)).toBe(5);
+describe('getBandName', () => {
+  it('should return a string', () => {
+    expect(typeof getBandName()).toBe('string');
+  });
+});
+
+describe('getGenre', () => {
+  it('should return a string', () => {
+    expect(typeof getGenre()).toBe('string');
+  });
+});
+
+describe('getBand', () => {
+  it('should return a string', () => {
+    const band = getBand();
+    expect(band).toHaveProperty('name');
+    expect(band).toHaveProperty('genre');
   });
 });

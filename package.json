@@ -27,5 +27,7 @@
     "prepublish": "yarn test && yarn build",
     "test": "jest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "random-seed": "^0.3.0"
+  }
 }
