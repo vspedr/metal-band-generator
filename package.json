@@ -1,9 +1,9 @@
 {
-  "name": "jables",
-  "version": "1.0.0",
-  "description": "Jest + Babel template for npm modules",
+  "name": "metal-band-generator",
+  "version": "0.1.0",
+  "description": "Randomly generates ficional metal band names and members",
   "main": "lib/index.js",
-  "repository": "https://github.com/vspedr/jables",
+  "repository": "https://github.com/vspedr/metal-band-generator",
   "author": "vspedr",
   "license": "MIT",
   "private": false,
