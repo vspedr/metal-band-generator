@@ -1,0 +1,20 @@
+body {
+  background-color: #222222;
+  color: #eeeeee;
+  font-family: "Metal Mania", sans-serif;
+  text-align: center;
+}
+
+#band-name {
+  font-size: 4em;
+}
+
+#band-genre {
+  font-size: 2em;
+}
+
+#members {
+  padding: 0px;
+  list-style: none;
+  font-size: 1.5em;
+}

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Metal Band Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="band-name"></h1>
+    <h2 id="band-genre">loading...</h2>
+    <ul id="members"></ul>
+    <script>
+      fetch('https://bwqpjbokwa.execute-api.us-east-1.amazonaws.com/dev/v1/bands', { mode: 'cors'})
+        .then(response => {
+          response.json().then(band => {
+            console.log(band);
+            document.getElementById("band-name").innerHTML = band.name;
+            document.getElementById("band-genre").innerHTML = band.genre;
+            const membersList = document.getElementById("members")
+            band.members.forEach(member => {
+              const item = document.createElement("li");
+              const memberString = document.createTextNode(member.name + ' (' + member.instrument + ')');
+              item.appendChild(memberString);
+              document.getElementById("members").appendChild(item);
+            });
+          });
+        })
+    </script>
+  </body>
+</html>
