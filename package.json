@@ -16,11 +16,13 @@
     "eslint": "^5.0.1",
     "eslint-config-google": "^0.11.0",
     "eslint-plugin-import": "^2.8.0",
+    "gh-pages": "^2.0.1",
     "husky": "^1.0.0",
     "jest": "^22.1.4",
     "rimraf": "^2.6.2"
   },
   "scripts": {
+    "deploy": "gh-pages -d gh-pages",
     "build": "rimraf lib && babel src/ --out-dir lib",
     "lint": "eslint .",
     "precommit": "yarn lint",
