@@ -30,6 +30,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "dedent": "^0.7.0",
     "random-seed": "^0.3.0"
   }
 }

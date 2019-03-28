@@ -1,4 +1,5 @@
 import getBand, {
+  bandToString,
   getBandMembers,
   getBandName,
   getGenre,
@@ -27,6 +28,15 @@ describe('Band details', () => {
       expect(band).toHaveProperty('name');
       expect(band).toHaveProperty('genre');
       expect(band).toHaveProperty('members');
+    });
+  });
+
+  describe('bandToString', () => {
+    it('should return a string', () => {
+      const band = getBand();
+      const bandString = bandToString(band);
+      console.log(bandString);
+      expect(typeof bandString).toBe('string');
     });
   });
 });

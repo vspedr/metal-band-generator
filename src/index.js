@@ -1,4 +1,5 @@
 import r from 'random-seed';
+import dedent from 'dedent';
 
 import {
   BAND_FIRST_NAMES,
@@ -57,6 +58,14 @@ const getBandMembers = () => {
   return members;
 };
 
+const bandToString = (band) => dedent`
+  ${band.name}
+  Genre: ${band.genre}
+
+  Members:
+  ${ band.members.map((m) => `${m.name} (${m.instrument})`).join('\n')}
+`;
+
 export {
   getBandName,
   getGenre,
@@ -64,6 +73,7 @@ export {
   getMemberInstrument,
   getMember,
   getBandMembers,
+  bandToString,
 };
 
 export default getBand;
