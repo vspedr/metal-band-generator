@@ -3,7 +3,6 @@
 Randomly generates ficional metal band names and members
 
 [![Build Status](https://travis-ci.org/vspedr/metal-band-generator.svg?branch=master)](https://travis-ci.org/vspedr/metal-band-generator)
-[![Greenkeeper badge](https://badges.greenkeeper.io/vspedr/metal-band-generator.svg)](https://greenkeeper.io/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8b4adc5619fd52a44f64/maintainability)](https://codeclimate.com/github/vspedr/metal-band-generator/maintainability)
 ![npm](https://img.shields.io/npm/v/metal-band-generator.svg)
 
